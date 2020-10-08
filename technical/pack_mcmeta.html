@@ -3,9 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>MC Datapacks TH</title>
-        
-        <meta name="robots" content="noindex" />
+        <title>เคล็ดลับไฟล์ pack.mcmeta - MC Datapacks TH</title>
         
         
 
@@ -20,26 +18,26 @@
         <meta name="theme-color" content="#ffffff" />
 
         
-        <link rel="icon" href="favicon.svg">
+        <link rel="icon" href="../favicon.svg">
         
         
-        <link rel="shortcut icon" href="favicon.png">
+        <link rel="shortcut icon" href="../favicon.png">
         
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/chrome.css">
-        <link rel="stylesheet" href="css/print.css" media="print">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
         
-        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
         
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="highlight.css">
-        <link rel="stylesheet" href="tomorrow-night.css">
-        <link rel="stylesheet" href="ayu-highlight.css">
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
         
@@ -49,7 +47,7 @@
     <body>
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
-            var path_to_root = "";
+            var path_to_root = "../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
@@ -95,7 +93,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">เทคนิคดาต้าแพ็ค โดย EstEarth</a></li><li class="chapter-item expanded "><a href="coding/tooling.html"><strong aria-hidden="true">1.</strong> เครื่องมือ</a></li><li class="chapter-item expanded "><a href="technical/namespace.html"><strong aria-hidden="true">2.</strong> เนมสเปซ</a></li><li class="chapter-item expanded "><a href="technical/structure.html"><strong aria-hidden="true">3.</strong> โครงสร้าง</a></li><li class="chapter-item expanded "><a href="technical/pack_mcmeta.html"><strong aria-hidden="true">4.</strong> เคล็ดลับไฟล์ pack.mcmeta</a></li><li class="chapter-item expanded "><a href="optimization/selector.html"><strong aria-hidden="true">5.</strong> selector</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">เทคนิคดาต้าแพ็ค โดย EstEarth</a></li><li class="chapter-item expanded "><a href="../coding/tooling.html"><strong aria-hidden="true">1.</strong> เครื่องมือ</a></li><li class="chapter-item expanded "><a href="../technical/namespace.html"><strong aria-hidden="true">2.</strong> เนมสเปซ</a></li><li class="chapter-item expanded "><a href="../technical/structure.html"><strong aria-hidden="true">3.</strong> โครงสร้าง</a></li><li class="chapter-item expanded "><a href="../technical/pack_mcmeta.html" class="active"><strong aria-hidden="true">4.</strong> เคล็ดลับไฟล์ pack.mcmeta</a></li><li class="chapter-item expanded "><a href="../optimization/selector.html"><strong aria-hidden="true">5.</strong> selector</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -130,7 +128,7 @@
                     <h1 class="menu-title">MC Datapacks TH</h1>
 
                     <div class="right-buttons">
-                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
                         
@@ -161,67 +159,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#เกียวกับ" id="เกียวกับ">เกี่ยวกับ</a></h1>
-<p>หน้านี้สร้างขึ้นเพื่อ แนะนำ, สอน และ อธิบายเทคนิคดีๆ ในการเขียนดาต้าแพ็ค จากประสบการณ์ของผมที่ผ่านมาเพื่อให้การพัฒนากับการซ่อมบำรุงดีขึ้นและง่ายขึ้นในอนาคต
-ซึ่งทุกคนสามารถนำไปปรับและประยุกต์ใช้ได้ เป็นทางเลือกหนึ่งที่ไม่ได้บังคับใดๆ แต่มีจุดประสงค์เพื่อให้การปฎิบัติตาม <a href="https://mc-datapacks.github.io/th/">แบบแผนทางการ</a> นั้นง่ายขึ้น ได้รับการตรวจสอบที่ง่ายขึ้นจาก Datapack Reviewer จากปัญหาบางอย่างที่เกิดขึ้นจากประสบการณ์ที่ตรวจสอบดาต้าแพ็คมา</p>
-<p><a href="https://discord.gg/KgbVpmz">ดิสคอร์ดไทย</a></p>
-<p><a href="https://discord.gg/SnJQcfq">ดิสคอร์ดตปท.</a></p>
-<h1><a class="header" href="#เครืองมือ" id="เครืองมือ">เครื่องมือ</a></h1>
-<h1><a class="header" href="#เกียวกับ-1" id="เกียวกับ-1">เกี่ยวกับ</a></h1>
-<p>นี่เป็นเครื่องมือที่ผมแนะนำมันทำให้สะดวกสบายในการเขียนดาต้าแพ็ค</p>
-<h1><a class="header" href="#โครงสรางไฟลดาตาแพค" id="โครงสรางไฟลดาตาแพค">โครงสร้างไฟล์ดาต้าแพ็ค</a></h1>
-<h2><a class="header" href="#เกียวกับ-2" id="เกียวกับ-2">เกี่ยวกับ</a></h2>
-<p>สำหรับแสดงตัวอย่างหนึ่งในโครงสร้างไฟล์ดาต้าแพ็คที่สวยงาม เป็นระเบียบ จัดกลุ่มได้ง่าย ง่ายต่อการอ่าน พัฒนา และ ซ่อมบำรุง</p>
-<h2><a class="header" href="#ตัวอยางทีเปนไปไดในแตละกรณี" id="ตัวอยางทีเปนไปไดในแตละกรณี">ตัวอย่างที่เป็นไปได้ในแต่ละกรณี</a></h2>
-<h3><a class="header" href="#ดาตาแพคหลายชุด" id="ดาตาแพคหลายชุด">ดาต้าแพ็คหลายชุด</a></h3>
-<pre><code>data
- ├ &lt;เนมสเปซ: ชื่อผู้สร้าง, ชื่อทีม&gt;
- │    ├ advancements
- │    │   ├ &lt;ชื่อดาต้าแพค&gt;
- │    │   │   ├ &lt;event&gt;
- │    │   │   │   ╰ &lt;player_hurt_entity&gt;.json
- │    │   │   ╰ &lt;place&gt;
- │    │   │       ╰ &lt;place_block&gt;.json
- │    │   ╰ &lt;ชื่อดาต้าแพค&gt;.json
- │    ├ functions
- │    │   ├ &lt;ชื่อดาต้าแพค&gt;
- │    │   │   ├ &lt;กลุ่มโฟลเดอร์ฟังก์ชั่น&gt;
- │    │   │   ├ main.mcfunction (เริ่ม loop*3)
- │    │   │   ├ setup.mcfunction (รัน load*3)
- │    │   │   ╰ uninstall.function
- │    │   ╰ &lt;database, random &amp; อื่นๆ&gt;
- │    ├ loot_tables
- │    │   ╰ &lt;ชื่อดาต้าแพค&gt;
- │    │       ╰ &lt;กลุ่มโฟลเดอร์รูทเช่น item, block&gt;
- │    │           ╰ &lt;...&gt;.json
- │    ├ predicates
- │    │   ╰ &lt;ชื่อดาต้าแพค&gt;
- │    │       ├ &lt;กลุ่มโฟลเดอร์ predicate&gt;
- │    │       ╰ &lt;...&gt;.json
- │    ├ recipes
- │    │   ╰ &lt;ชื่อดาต้าแพค&gt;
- │    │       ╰ &lt;...&gt;.json
- │    ╰ tags
- │        ├ &lt;items&gt;
- │        │   ╰ &lt;ชื่อดาต้าแพค&gt;
- │        │       ╰ &lt;...&gt;.json
- │        ╰ &lt;functions&gt;
- │            ╰ &lt;ชื่อดาต้าแพค&gt;
- │                ├ load.json*2
- │                ╰ loop.json*2
- ├ &lt;โกลบอล&gt;
- │    ╰ advancements
- │        ├ &lt;เนมสเปซ&gt;.json
- │        ╰ root.json
- ╰ &lt;ไมน์คราฟต์&gt;
-      ╰ tags
-          ╰ &lt;functions&gt;
-              ├ load.json*1
-              ╰ tick.json*1
-</code></pre>
-<h3><a class="header" href="#ดาตาแพคชุดเดียว" id="ดาตาแพคชุดเดียว">ดาต้าแพ็คชุดเดียว</a></h3>
-<h1><a class="header" href="#เคลดลับไฟล-packmcmeta" id="เคลดลับไฟล-packmcmeta">เคล็ดลับไฟล์ pack.mcmeta</a></h1>
-<h1><a class="header" href="#เกียวกับ-3" id="เกียวกับ-3">เกี่ยวกับ</a></h1>
+                        <h1><a class="header" href="#เคลดลับไฟล-packmcmeta" id="เคลดลับไฟล-packmcmeta">เคล็ดลับไฟล์ pack.mcmeta</a></h1>
+<h1><a class="header" href="#เกียวกับ" id="เกียวกับ">เกี่ยวกับ</a></h1>
 <p>เป็นลูกเล่นที่คุณสามารถนำไปใช้ได้</p>
 <h1><a class="header" href="#ใชงานยังไง" id="ใชงานยังไง">ใช้งานยังไง</a></h1>
 <p>ไฟล์ <code>pack.mcmeta</code> รองรับ JSON Text Component ด้วยนะ
@@ -245,9 +184,9 @@
 	}
 }
 </code></pre>
-<p><img src="technical/./pack/1.png" alt="" /></p>
+<p><img src="./pack/1.png" alt="" /></p>
 <p>ถ้าคุณใส่ <code>&quot;description&quot;: [&quot;&quot;,{</code> 2 บรรทัดล่างจะกลายเป็นสีค่าตั้งต้น</p>
-<p><img src="technical/./pack/1_1.png" alt="" /></p>
+<p><img src="./pack/1_1.png" alt="" /></p>
 <h2><a class="header" href="#แบบ-ที-2" id="แบบ-ที-2">แบบ ที่ 2</a></h2>
 <pre><code class="language-json">{
     &quot;pack&quot;: {
@@ -270,7 +209,7 @@
     }
 }
 </code></pre>
-<p><img src="technical/./pack/2.png" alt="" /></p>
+<p><img src="./pack/2.png" alt="" /></p>
 <p>สำหรับเกมเวอร์ชั่น 1.16 ขึ้นไป
 คุณสามารถใช้ค่าสี <em>HEX</em> และ <em>Font</em> กำหนดเองด้วย <em>Resource pack</em> ได้</p>
 <h2><a class="header" href="#ตัวอยางการใชงานสำหรับ-advancement" id="ตัวอยางการใชงานสำหรับ-advancement">ตัวอย่างการใช้งานสำหรับ Advancement</a></h2>
@@ -320,7 +259,7 @@
 	}
 }
 </code></pre>
-<p><img src="technical/./pack/3.png" alt="" /></p>
+<p><img src="./pack/3.png" alt="" /></p>
 <h2><a class="header" href="#หมายเหตุ" id="หมายเหตุ">หมายเหตุ</a></h2>
 <p><code>\n</code> มีหน้าที่ขึ้นบรรทัดใหม่ แนะนำให้ใส่ไว้ข้างหลังรูปแบบโค๊ดจะสวยกว่า</p>
 
@@ -329,7 +268,15 @@
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
+                            <a rel="prev" href="../technical/structure.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
 
+                        
+                            <a rel="next" href="../optimization/selector.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
                         
 
                         <div style="clear: both"></div>
@@ -339,7 +286,15 @@
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
+                    <a rel="prev" href="../technical/structure.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
 
+                
+                    <a rel="next" href="../optimization/selector.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
                 
             </nav>
 
@@ -360,26 +315,18 @@
         
 
         
-        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
         
 
-        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
         
 
-        
-        
-        <script type="text/javascript">
-        window.addEventListener('load', function() {
-            window.setTimeout(window.print, 100);
-        });
-        </script>
-        
         
 
     </body>
