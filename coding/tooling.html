@@ -163,16 +163,171 @@
 <h1><a class="header" href="#เกียวกับ" id="เกียวกับ">เกี่ยวกับ</a></h1>
 <p>นี่เป็นเครื่องมือที่ผมแนะนำมันทำให้สะดวกสบายในการเขียนดาต้าแพ็ค</p>
 <h2><a class="header" href="#โปรแกรม" id="โปรแกรม">โปรแกรม</a></h2>
-<p>1.ลง <a href="https://code.visualstudio.com/">VS Code</a> หรือ <a href="https://code.visualstudio.com/insiders/">VS Code Insider</a> หรือ <a href="https://vscodium.com/">VS Codium</a> *ผมใช้ Insider
-2.ติดตั้งส่วนขยาย</p>
+<p>1.ลง <a href="https://code.visualstudio.com/">VS Code</a> หรือ <a href="https://code.visualstudio.com/insiders/">VS Code Insider</a> หรือ <a href="https://vscodium.com/">VS Codium</a> *ผมใช้ Insider</p>
+<p>2.ติดตั้งส่วนขยาย</p>
 <ul>
 <li><a href="https://marketplace.visualstudio.com/items?itemName=SPGoding.datapack-language-server">Data-pack Helper Plus</a> สำหรับช่วยเขียนดาต้าแพ็ค</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/SPGoding/vscode-datapack-helper-plus/master/img/simple-completions.gif" alt="alt" /></p>
+<ul>
 <li><a href="https://marketplace.visualstudio.com/items?itemName=arcensoth.language-mcfunction">language-mcfunction</a> สำหรับไฮไลท์สีโค๊ดดาต้าแพ็คเพิ่มเติม</li>
 <li><a href="https://marketplace.visualstudio.com/items?itemName=actuallyboomber.tellraw-preview">tellraw preview</a> เอาไว้ดูตัวอย่างข้อความที่ส่งไปยังผู้เล่น</li>
+</ul>
+<p><img src="https://i.imgur.com/9Q64XoT.png" alt="alt" /></p>
+<ul>
 <li><a href="https://marketplace.visualstudio.com/items?itemName=ExodiusStudios.comment-anchors">Comment Anchors</a> เอาไว้ไฮไลท์คอมเม้นท์และมาร์กสีฟังก์ชั้น <code>#</code> ของ <code>Data-pack Helper Plus</code></li>
+</ul>
+<p><img src="./program/comment.png" alt="" /></p>
+<ul>
 <li><a href="https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme">Material Icon Theme</a> เปลี่ยนไอคอนไฟล์สวยๆ อันนี้แล้วแต่ความชอบ</li>
 </ul>
 <h2><a class="header" href="#ตังคา" id="ตังคา">ตั้งค่า</a></h2>
+<p>ถ้าคุณเขียนดาต้าแพ็คแล้วอยากให้โค๊ดมีลักษณะสวยๆแบบนี้ หรือ ปรับแต่งได้ตามใจชอบ สามารถตั้งค่าได้ดังนี้</p>
+<p><img src="./program/window.png" alt="" /></p>
+<p>1.หลังจากโหลด Font และติดตั้งแล้ว ก็ตั้งค่า Font โดยไปที่ <code>Setting -&gt; Text Editor -&gt; Font -&gt; Font Family ใส่ Fira Code</code></p>
+<ul>
+<li>Font <a href="https://github.com/tonsky/FiraCode">Fira Code</a> (แล้วแต่ความชอบด้วย ที่ผมใช้ Font ส่วนนึงเพราะการเปลี่ยนรูปเครื่องหมาย <code>&lt;=</code> <code>-&gt;</code> ดั่งในภาพ และ <code>@</code> มันเท่ห์ดี)</li>
+<li>Font Ligatures (เปลี่ยนรูปเครื่องหมาย <code>&lt;=</code> <code>-&gt;</code>) -&gt; <code>Edit in settings.json</code> -&gt; <code>&quot;editor.fontLigatures&quot;: true</code></li>
+</ul>
+<p>2.ไฮไลท์สี </p>
+<ul>
+<li>จากข้อก่อนหน้าไม่ต้องปิดหน้าต่าง settings.json</li>
+<li>ให้คัดลอกนำไปใส่ได้เลย ( <code>,</code> จะต่อจาก <code>editor.fontLigatures&quot;: true</code>)</li>
+<li>อยากปรับแต่งเพิ่มเติม <a href="https://github.com/SPGoding/datapack-language-server/wiki/Semantic-Tokens">ดูที่นี่</a></li>
+</ul>
+<pre><code class="language-json">    ,
+    &quot;editor.semanticTokenColorCustomizations&quot;: {
+        &quot;enabled&quot;: true,
+        &quot;rules&quot;: {            
+            &quot;literal&quot;: &quot;#ffffff&quot;,
+            &quot;*.firstArgument&quot;: &quot;#c986c4&quot;,
+            &quot;*.declaration&quot;: {
+                &quot;fontStyle&quot;: &quot;italic&quot;,
+            },
+            &quot;identity&quot;: &quot;#f1bf74&quot;,
+            &quot;operator&quot;: &quot;#da4545&quot;,
+            &quot;boolean&quot;: &quot;#bcdf6c&quot;,
+            &quot;property&quot;: &quot;#81c0fa&quot;,
+            &quot;string&quot;: &quot;#bcdf6c&quot;,
+            &quot;*.inString&quot;: {
+                &quot;fontStyle&quot;: &quot;&quot;
+            },
+            &quot;type&quot;: &quot;#ff6ec3&quot;,
+            &quot;variable&quot;: &quot;#e19178&quot;,
+            &quot;vector&quot;: &quot;#00ffffde&quot;,
+        }
+    },
+    &quot;workbench.colorCustomizations&quot;: {
+        &quot;statusBar.background&quot;: &quot;#16825d&quot;,
+        &quot;statusBarItem.remoteBackground&quot;: &quot;#3ea8ff&quot;
+    }
+</code></pre>
+<p>3.ไฮไลท์คอมเมนต์ (ใส่ หลังจาก <code>{</code> ในข้อ 2 ได้เลย )</p>
+<pre><code class="language-json">    ,
+    &quot;commentAnchors.tags.list&quot;: [   
+
+        {
+            &quot;tag&quot;: &quot;ANCHOR&quot;,
+            &quot;iconColor&quot;: &quot;default&quot;,
+            &quot;highlightColor&quot;: &quot;#A8C023&quot;,
+            &quot;scope&quot;: &quot;file&quot;,
+            &quot;enabled&quot;: false
+        },
+        {
+            &quot;tag&quot;: &quot;TODO&quot;,
+            &quot;iconColor&quot;: &quot;blue&quot;,
+            &quot;highlightColor&quot;: &quot;#3ea8ff&quot;,
+            &quot;scope&quot;: &quot;file&quot;,
+            &quot;enabled&quot;: false
+        },
+        {
+            &quot;tag&quot;: &quot;FIXME&quot;,
+            &quot;iconColor&quot;: &quot;red&quot;,
+            &quot;highlightColor&quot;: &quot;#F44336&quot;,
+            &quot;scope&quot;: &quot;file&quot;,
+            &quot;enabled&quot;: false
+        },
+        {
+            &quot;tag&quot;: &quot;STUB&quot;,
+            &quot;iconColor&quot;: &quot;purple&quot;,
+            &quot;highlightColor&quot;: &quot;#BA68C8&quot;,
+            &quot;scope&quot;: &quot;file&quot;,
+            &quot;enabled&quot;: false
+        },
+        {
+            &quot;tag&quot;: &quot;NOTE&quot;,
+            &quot;iconColor&quot;: &quot;orange&quot;,
+            &quot;highlightColor&quot;: &quot;#FFB300&quot;,
+            &quot;scope&quot;: &quot;file&quot;,
+            &quot;enabled&quot;: false
+        },
+        {
+            &quot;tag&quot;: &quot;REVIEW&quot;,
+            &quot;iconColor&quot;: &quot;green&quot;,
+            &quot;highlightColor&quot;: &quot;#64DD17&quot;,
+            &quot;scope&quot;: &quot;file&quot;,
+            &quot;enabled&quot;: false
+        },
+        {
+            &quot;tag&quot;: &quot;SECTION&quot;,
+            &quot;iconColor&quot;: &quot;blurple&quot;,
+            &quot;highlightColor&quot;: &quot;#896afc&quot;,
+            &quot;scope&quot;: &quot;file&quot;,
+            &quot;behavior&quot;: &quot;region&quot;,
+            &quot;enabled&quot;: false
+        },
+        {
+            &quot;tag&quot;: &quot;LINK&quot;,
+            &quot;iconColor&quot;: &quot;#2ecc71&quot;,
+            &quot;highlightColor&quot;: &quot;#2ecc71&quot;,
+            &quot;scope&quot;: &quot;file&quot;,
+            &quot;behavior&quot;: &quot;link&quot;,
+            &quot;enabled&quot;: false
+        },
+        {
+            &quot;tag&quot;: &quot;define&quot;,
+            &quot;highlightColor&quot;: &quot;#BA68C8&quot;,
+            &quot;scope&quot;: &quot;file&quot;,
+            &quot;isItalic&quot;: false
+        },        
+        {
+            &quot;tag&quot;: &quot;alias&quot;,
+            &quot;highlightColor&quot;: &quot;#7c6afb&quot;,
+            &quot;scope&quot;: &quot;file&quot;,
+            &quot;isItalic&quot;: false,
+        },
+        {
+            &quot;tag&quot;: &quot;declare&quot;,
+            &quot;highlightColor&quot;: &quot;#d55462&quot;,
+            &quot;scope&quot;: &quot;file&quot;,
+            &quot;isItalic&quot;: false,
+        },
+        {
+            &quot;tag&quot;: &quot;#&gt;&quot;,
+            &quot;highlightColor&quot;: &quot;#A8C023&quot;,           
+            &quot;scope&quot;: &quot;file&quot;,
+            &quot;isItalic&quot;: false
+        },
+        {
+            &quot;tag&quot;: &quot;# @&quot;,
+            &quot;highlightColor&quot;: &quot;#469fe3&quot;,
+            &quot;scope&quot;: &quot;file&quot;,
+            &quot;isItalic&quot;: false
+        },
+        {
+            &quot;tag&quot;: &quot;# &quot;,
+            &quot;highlightColor&quot;: &quot;#2ecc71&quot;,
+            &quot;scope&quot;: &quot;file&quot;,
+            &quot;isItalic&quot;: false
+        }
+    ],
+    &quot;commentAnchors.tags.matchCase&quot;: false,
+    &quot;commentAnchors.tags.separators&quot;: [
+        &quot; - &quot;,
+        &quot;: &quot;,
+        &quot;&quot;
+    ]
+</code></pre>
 
                     </main>
 
