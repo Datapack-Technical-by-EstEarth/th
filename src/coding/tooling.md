@@ -1,15 +1,14 @@
 # เครื่องมือ
 
-# เกี่ยวกับ
-
 นี่เป็นเครื่องมือที่ผมแนะนำมันทำให้สะดวกสบายในการเขียนดาต้าแพ็ค
-
 ## โปรแกรม
 
 1.ลง [VS Code](https://code.visualstudio.com/) หรือ [VS Code Insider](https://code.visualstudio.com/insiders/) หรือ [VS Codium](https://vscodium.com/) *ผมใช้ Insider
 
 2.ติดตั้งส่วนขยาย
 - [Data-pack Helper Plus](https://marketplace.visualstudio.com/items?itemName=SPGoding.datapack-language-server) สำหรับช่วยเขียนดาต้าแพ็ค
+
+ตัวอย่างคร่าวๆ
 
 ![alt](https://raw.githubusercontent.com/SPGoding/vscode-datapack-helper-plus/master/img/simple-completions.gif)
 
@@ -31,7 +30,7 @@
 ![](./program/window.png)
 
 1.หลังจากโหลด Font และติดตั้งแล้ว ก็ตั้งค่า Font โดยไปที่ `Setting -> Text Editor -> Font -> Font Family ใส่ Fira Code`
-- Font [Fira Code](https://github.com/tonsky/FiraCode) (แล้วแต่ความชอบด้วย ที่ผมใช้ Font ส่วนนึงเพราะการเปลี่ยนรูปเครื่องหมาย `<=` `->` ดั่งในภาพ และ `@` มันเท่ห์ดี)
+- Font [Fira Code](https://github.com/tonsky/FiraCode) (แล้วแต่ความชอบด้วย ที่ผมใช้ Font นี้ส่วนนึงเพราะการเปลี่ยนรูปเครื่องหมาย `<=` `->` ดั่งในภาพ และ `@` มันเท่ห์ดี)
 - Font Ligatures (เปลี่ยนรูปเครื่องหมาย `<=` `->`) -> `Edit in settings.json` -> `"editor.fontLigatures": true`
 
 2.ไฮไลท์สี 
@@ -66,7 +65,7 @@
         "statusBarItem.remoteBackground": "#3ea8ff"
     }
 ```
-3.ไฮไลท์คอมเมนต์ (ใส่ หลังจาก `{` ในข้อ 2 ได้เลย )
+3.ไฮไลท์คอมเมนต์ (ใส่ หลังจาก `}` ในข้อ 2 ได้เลย )
 ```json
     ,
     "commentAnchors.tags.list": [   
